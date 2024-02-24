@@ -24,8 +24,8 @@ cargo new <project_name>
 cargo add actix-web
 ```
 
-3. Modify the code in the main.rs file to create a simple actix web server as per requirement.
-The code in this repository displays a simple text message.
+3. Modify the code in the main.rs file to create a simple actix web server as per requirement.  
+The sample code in this repository displays a simple text message.
 
 4. Build the project using the following command:
 ```bash
@@ -36,9 +36,12 @@ cargo build
 ```bash
 cargo run
 ```
+![Cargo Run](./Resources/cargo_run.png)
 
 6. Open a web browser and navigate to [http://localhost:8080](http://localhost:8080) to verify the application is running as expected.  
 **Note**: The port number may vary based on the port number specified in the code.
+
+![Web Browser](./Resources/local_host.png)
 
 7. Stop the application by pressing ``Ctrl+C`` in the terminal.
 
@@ -59,11 +62,17 @@ docker build -t <user_name>/<image_name> . --no-cache
 ```
 **Note**: --no-cache is an optional argument and is used to build the image from scratch
 
+![Docker Build](./Resources/docker_build.png)
+![Docker Image](./Resources/docker_image.png)
+
 3. Run the docker container using the following command:
 ```bash
 docker run -p 8080:8080 <user_name>/<image_name>
 ```
 **Note**: The port number may vary based on the port number specified in the code.
+
+![Docker Run](./Resources/docker_run.png)
+![Docker Container](./Resources/docker_container.png)
 
 4. Open a web browser and navigate to [http://localhost:8080](http://localhost:8080) to verify the application is running as expected.
 
@@ -75,7 +84,3 @@ docker stop <container_id>
 ```bash
 docker ps
 ```
-
-## C. Sample Execution
-
-1. 
